@@ -1,15 +1,18 @@
 function grade(homework: number, midterm: number, final: number) {
 
     let score: number = homework + midterm + final
-    if (score < 50){
+    if (score < 50) {
         return 'เกรด F'
-    }else if (score < 60){
+    } else if (score < 60) {
         return 'เกรด D'
-    }else if(score < 70)
+    } else if (score < 70) {
         return 'เกรด C'
-    {else if(score < 80)
+    } else if (score < 80) {
         return 'เกรด B'
+    } else {
+        return 'เกรด A'
     }
+    
 }
-console.log(grade(50,10,20))
+console.log(grade(50, 20, 20))
 
